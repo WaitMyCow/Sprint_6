@@ -5,3 +5,7 @@ class HomePageLocators:
     ORDER_BUTTON_BIG = [By.XPATH, "//button[contains(@class, 'Button_Middle')]"]
     QUESTION = [By.ID, "accordion__heading-{}"]
     QUESTION_EXPANDED = [By.XPATH, "//*[@aria-expanded='true']"]
+    ANSWER_TEXT = [By.CSS_SELECTOR,'[id="accordion__panel-{}"]']
+
+    SCOOTER_LOGO = [By.XPATH, '//img[@alt="Scooter"]']
+    YANDEX_LOGO = [By.XPATH, '//img[@alt="Yandex"]']

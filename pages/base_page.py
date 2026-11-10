@@ -33,3 +33,6 @@ class BasePage():
     def switch_to_new_window(self, old_windows): #переключает окно/вкладку
         WebDriverWait(self.driver, 10).until(lambda d: len(d.window_handles) > len(old_windows)) #d.window_handles это список идентификаторов всех открытых вкладок и окон браузера.
         self.driver.switch_to.window(self.driver.window_handles[-1])
+        
+    def is_element_visible(self, locator): #ждём когда элемент будет видно на экране
+        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator))

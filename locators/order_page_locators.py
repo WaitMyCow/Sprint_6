@@ -1,9 +1,6 @@
 from selenium.webdriver.common.by import By
 
 class OrderPageLocators:
-    SCOOTER_LOGO = [By.XPATH, '//img[@alt="Scooter"]']
-    YANDEX_LOGO = [By.XPATH, '//img[@alt="Yandex"]']
-
     NAME_FIELD = [By.XPATH, "//input[@placeholder='* Имя']"] 
     SURNAME_FIELD = [By.XPATH, "//input[@placeholder='* Фамилия']"] 
     ADRESS_FIELD = [By.XPATH, "//input[@placeholder='* Адрес: куда привезти заказ']"]
